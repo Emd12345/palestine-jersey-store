@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palestine Jersey Shop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .price {
+      font-size: 1.2rem;
+      color: green;
+    }
+    label, select, button {
+      display: block;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    select, button {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #d32f2f;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #b71c1c;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Palestine Jersey Shop</h1>
+    <p>Support with pride. Wear it loud.</p>
+  </header>
+
+  <main class="products">
+    <div class="card">
+      <img src="/mnt/data/Screenshot 2025-06-28 9.54.15 PM.png" alt="Black Palestine Jersey">
+      <div class="card-content">
+        <h2>Black Palestine Jersey</h2>
+        <p class="price">$49.99 CAD</p>
+        <label for="black-size">Select Size:</label>
+        <select id="black-size">
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/mnt/data/Screenshot 2025-06-28 9.54.23 PM.png" alt="White Palestine Jersey">
+      <div class="card-content">
+        <h2>White Palestine Jersey</h2>
+        <p class="price">$49.99 CAD</p>
+        <label for="white-size">Select Size:</label>
+        <select id="white-size">
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Palestine Jersey Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
